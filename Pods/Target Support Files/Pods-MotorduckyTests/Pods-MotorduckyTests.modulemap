@@ -1,0 +1,6 @@
+framework module Pods_MotorduckyTests {
+  umbrella header "Pods-MotorduckyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

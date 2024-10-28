@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		206687CBB5CAA7F31BF5AEC9 /* Pods_Motorducky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED68FE8773CAB69E87D74C0 /* Pods_Motorducky.framework */; };
+		2C0BCFD62CC9042B008BEFAF /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BCFD52CC9042B008BEFAF /* WebVC.swift */; };
+		2C0BCFD82CC91146008BEFAF /* BuildLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BCFD72CC91146008BEFAF /* BuildLogVC.swift */; };
+		2C0BCFDA2CC91BA5008BEFAF /* SelectLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BCFD92CC91BA5008BEFAF /* SelectLogVC.swift */; };
+		2C7C8E482CC92617008975D2 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C8E472CC92617008975D2 /* AppNavigationController.swift */; };
+		2C7C8E4A2CC9269D008975D2 /* ApplicationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C8E492CC9269D008975D2 /* ApplicationRoot.swift */; };
+		2C85DEC82CCA163200F38CE7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85DEC72CCA163200F38CE7 /* UIView+Extensions.swift */; };
+		2C85DECA2CCA168C00F38CE7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85DEC92CCA168C00F38CE7 /* UIViewExtensions.swift */; };
+		2C85DECC2CCA528100F38CE7 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85DECB2CCA528100F38CE7 /* HistoryVC.swift */; };
+		2C85DED22CCA539600F38CE7 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C85DED12CCA539600F38CE7 /* HistoryCell.xib */; };
+		2C85DED32CCA539600F38CE7 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85DED02CCA539600F38CE7 /* HistoryCell.swift */; };
+		2C85DED52CCA606200F38CE7 /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85DED42CCA606200F38CE7 /* VideoPlayerVC.swift */; };
+		2CADBBE52CC92DA9002F4352 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADBBE42CC92DA9002F4352 /* SettingsVC.swift */; };
+		2CB8DF642CCBAC1D0015BE05 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8DF632CCBAC1D0015BE05 /* sample.mp4 */; };
+		37BDBD6D2CC7C5A0002B02D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BDBD6C2CC7C5A0002B02D9 /* ViewController.swift */; };
+		37BDBD6E2CC7C5A0002B02D9 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BDBD662CC7C5A0002B02D9 /* ImagesViewController.swift */; };
+		37BDBD6F2CC7C5A0002B02D9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BDBD692CC7C5A0002B02D9 /* MainViewController.swift */; };
+		37BDBD712CC7C5A0002B02D9 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BDBD6B2CC7C5A0002B02D9 /* TextViewController.swift */; };
+		37BDBD722CC7C5A0002B02D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BDBD682CC7C5A0002B02D9 /* Main.storyboard */; };
+		69D706222BE87640033F2F2C /* Pods_MotorduckyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29A0DFA6FC950646F670E25 /* Pods_MotorduckyTests.framework */; };
+		9A912EF02CC6AD21009AA6F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A912EEF2CC6AD21009AA6F5 /* HomeViewController.swift */; };
+		9A9242A82CC6916F00FDC908 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A9242A72CC6916F00FDC908 /* GoogleService-Info.plist */; };
+		9AF2C40B2CC67B2900E480B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C40A2CC67B2900E480B0 /* AppDelegate.swift */; };
+		9AF2C40F2CC67B2900E480B0 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C40E2CC67B2900E480B0 /* SplashVC.swift */; };
+		9AF2C4122CC67B2900E480B0 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2C4102CC67B2900E480B0 /* Onboarding.storyboard */; };
+		9AF2C4152CC67B2900E480B0 /* Motorducky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C4132CC67B2900E480B0 /* Motorducky.xcdatamodeld */; };
+		9AF2C4172CC67B2B00E480B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2C4162CC67B2B00E480B0 /* Assets.xcassets */; };
+		9AF2C41A2CC67B2B00E480B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2C4182CC67B2B00E480B0 /* LaunchScreen.storyboard */; };
+		9AF2C4252CC67B2B00E480B0 /* MotorduckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C4242CC67B2B00E480B0 /* MotorduckyTests.swift */; };
+		9AF2C42F2CC67B2B00E480B0 /* MotorduckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C42E2CC67B2B00E480B0 /* MotorduckyUITests.swift */; };
+		9AF2C4312CC67B2B00E480B0 /* MotorduckyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C4302CC67B2B00E480B0 /* MotorduckyUITestsLaunchTests.swift */; };
+		9AF2C43F2CC67C9100E480B0 /* IdOblutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C43E2CC67C9100E480B0 /* IdOblutes.swift */; };
+		9AF2C4422CC681F600E480B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C4412CC681F600E480B0 /* LoginViewController.swift */; };
+		9AF2C4442CC6820700E480B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C4432CC6820700E480B0 /* SignUpViewController.swift */; };
+		9AF2C4462CC6821500E480B0 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C4452CC6821500E480B0 /* OTPViewController.swift */; };
+		F31259B268AA4F61095CF65D /* Pods_Motorducky_MotorduckyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8844461D7879EABD8E624B29 /* Pods_Motorducky_MotorduckyUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AF2C4212CC67B2B00E480B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF2C3FF2CC67B2900E480B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AF2C4062CC67B2900E480B0;
+			remoteInfo = Motorducky;
+		};
+		9AF2C42B2CC67B2B00E480B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF2C3FF2CC67B2900E480B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AF2C4062CC67B2900E480B0;
+			remoteInfo = Motorducky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C0BCFCB2CC8FD02008BEFAF /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0BCFCF2CC8FD0B008BEFAF /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0BCFD52CC9042B008BEFAF /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		2C0BCFD72CC91146008BEFAF /* BuildLogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildLogVC.swift; sourceTree = "<group>"; };
+		2C0BCFD92CC91BA5008BEFAF /* SelectLogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLogVC.swift; sourceTree = "<group>"; };
+		2C7C8E472CC92617008975D2 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		2C7C8E492CC9269D008975D2 /* ApplicationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRoot.swift; sourceTree = "<group>"; };
+		2C85DEC72CCA163200F38CE7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2C85DEC92CCA168C00F38CE7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		2C85DECB2CCA528100F38CE7 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		2C85DED02CCA539600F38CE7 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		2C85DED12CCA539600F38CE7 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		2C85DED42CCA606200F38CE7 /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
+		2CADBBE42CC92DA9002F4352 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2CB8DF632CCBAC1D0015BE05 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		37BDBD662CC7C5A0002B02D9 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		37BDBD672CC7C5A0002B02D9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37BDBD692CC7C5A0002B02D9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		37BDBD6B2CC7C5A0002B02D9 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		37BDBD6C2CC7C5A0002B02D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3ED68FE8773CAB69E87D74C0 /* Pods_Motorducky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motorducky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47461BB70F4544B6CD708A54 /* Pods-Motorducky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motorducky.debug.xcconfig"; path = "Target Support Files/Pods-Motorducky/Pods-Motorducky.debug.xcconfig"; sourceTree = "<group>"; };
+		683909480BC3DE3F025D6AFF /* Pods-MotorduckyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotorduckyTests.release.xcconfig"; path = "Target Support Files/Pods-MotorduckyTests/Pods-MotorduckyTests.release.xcconfig"; sourceTree = "<group>"; };
+		70B7A1AD51717CEEC463DF04 /* Pods-MotorduckyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotorduckyTests.debug.xcconfig"; path = "Target Support Files/Pods-MotorduckyTests/Pods-MotorduckyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8844461D7879EABD8E624B29 /* Pods_Motorducky_MotorduckyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motorducky_MotorduckyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A912EEF2CC6AD21009AA6F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A9242A72CC6916F00FDC908 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9AF2C4072CC67B2900E480B0 /* Motorducky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motorducky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF2C40A2CC67B2900E480B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AF2C40E2CC67B2900E480B0 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		9AF2C4112CC67B2900E480B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		9AF2C4142CC67B2900E480B0 /* Motorducky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motorducky.xcdatamodel; sourceTree = "<group>"; };
+		9AF2C4162CC67B2B00E480B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AF2C4192CC67B2B00E480B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AF2C41B2CC67B2B00E480B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF2C4202CC67B2B00E480B0 /* MotorduckyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotorduckyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF2C4242CC67B2B00E480B0 /* MotorduckyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorduckyTests.swift; sourceTree = "<group>"; };
+		9AF2C42A2CC67B2B00E480B0 /* MotorduckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotorduckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF2C42E2CC67B2B00E480B0 /* MotorduckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorduckyUITests.swift; sourceTree = "<group>"; };
+		9AF2C4302CC67B2B00E480B0 /* MotorduckyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorduckyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9AF2C43E2CC67C9100E480B0 /* IdOblutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdOblutes.swift; sourceTree = "<group>"; };
+		9AF2C4412CC681F600E480B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9AF2C4432CC6820700E480B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9AF2C4452CC6821500E480B0 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		BC49F7CA31F43BCEF52CE77A /* Pods-Motorducky-MotorduckyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motorducky-MotorduckyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Motorducky-MotorduckyUITests/Pods-Motorducky-MotorduckyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D29A0DFA6FC950646F670E25 /* Pods_MotorduckyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotorduckyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF64FD6374EB542F00365DA3 /* Pods-Motorducky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motorducky.release.xcconfig"; path = "Target Support Files/Pods-Motorducky/Pods-Motorducky.release.xcconfig"; sourceTree = "<group>"; };
+		FD0AC0C6D895760BF5888871 /* Pods-Motorducky-MotorduckyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motorducky-MotorduckyUITests.release.xcconfig"; path = "Target Support Files/Pods-Motorducky-MotorduckyUITests/Pods-Motorducky-MotorduckyUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AF2C4042CC67B2900E480B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206687CBB5CAA7F31BF5AEC9 /* Pods_Motorducky.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF2C41D2CC67B2B00E480B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D706222BE87640033F2F2C /* Pods_MotorduckyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF2C4272CC67B2B00E480B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31259B268AA4F61095CF65D /* Pods_Motorducky_MotorduckyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C0BCFD22CC903EA008BEFAF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C0BCFD52CC9042B008BEFAF /* WebVC.swift */,
+				2C0BCFD72CC91146008BEFAF /* BuildLogVC.swift */,
+				2C0BCFD92CC91BA5008BEFAF /* SelectLogVC.swift */,
+				2C85DECB2CCA528100F38CE7 /* HistoryVC.swift */,
+				2CADBBE42CC92DA9002F4352 /* SettingsVC.swift */,
+				2C85DED42CCA606200F38CE7 /* VideoPlayerVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2C0BCFDB2CC91CE6008BEFAF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2C85DEC92CCA168C00F38CE7 /* UIViewExtensions.swift */,
+				2C85DEC72CCA163200F38CE7 /* UIView+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2C85DECD2CCA536E00F38CE7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C85DED02CCA539600F38CE7 /* HistoryCell.swift */,
+				2C85DED12CCA539600F38CE7 /* HistoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		37BDBD4F2CC7C4B3002B02D9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9A912EEE2CC6AD0E009AA6F5 /* Home */,
+				9A9242A72CC6916F00FDC908 /* GoogleService-Info.plist */,
+				9AF2C4402CC681C100E480B0 /* Auth */,
+				9AF2C43D2CC67C6B00E480B0 /* Utils */,
+				9AF2C40E2CC67B2900E480B0 /* SplashVC.swift */,
+				9AF2C4102CC67B2900E480B0 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7E1109FF5E9509A19E27A66E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47461BB70F4544B6CD708A54 /* Pods-Motorducky.debug.xcconfig */,
+				EF64FD6374EB542F00365DA3 /* Pods-Motorducky.release.xcconfig */,
+				BC49F7CA31F43BCEF52CE77A /* Pods-Motorducky-MotorduckyUITests.debug.xcconfig */,
+				FD0AC0C6D895760BF5888871 /* Pods-Motorducky-MotorduckyUITests.release.xcconfig */,
+				70B7A1AD51717CEEC463DF04 /* Pods-MotorduckyTests.debug.xcconfig */,
+				683909480BC3DE3F025D6AFF /* Pods-MotorduckyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		815096D3086A7488C3BD3F4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C0BCFCF2CC8FD0B008BEFAF /* FirebaseFirestore.framework */,
+				2C0BCFCB2CC8FD02008BEFAF /* FirebaseAuth.framework */,
+				3ED68FE8773CAB69E87D74C0 /* Pods_Motorducky.framework */,
+				8844461D7879EABD8E624B29 /* Pods_Motorducky_MotorduckyUITests.framework */,
+				D29A0DFA6FC950646F670E25 /* Pods_MotorduckyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A912EEE2CC6AD0E009AA6F5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A912EEF2CC6AD21009AA6F5 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9AF2C3FE2CC67B2900E480B0 = {
+			isa = PBXGroup;
+			children = (
+				9AF2C4092CC67B2900E480B0 /* Motorducky */,
+				9AF2C4232CC67B2B00E480B0 /* MotorduckyTests */,
+				9AF2C42D2CC67B2B00E480B0 /* MotorduckyUITests */,
+				9AF2C4082CC67B2900E480B0 /* Products */,
+				7E1109FF5E9509A19E27A66E /* Pods */,
+				815096D3086A7488C3BD3F4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AF2C4082CC67B2900E480B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2C4072CC67B2900E480B0 /* Motorducky.app */,
+				9AF2C4202CC67B2B00E480B0 /* MotorduckyTests.xctest */,
+				9AF2C42A2CC67B2B00E480B0 /* MotorduckyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AF2C4092CC67B2900E480B0 /* Motorducky */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2C40A2CC67B2900E480B0 /* AppDelegate.swift */,
+				2C7C8E492CC9269D008975D2 /* ApplicationRoot.swift */,
+				2C7C8E472CC92617008975D2 /* AppNavigationController.swift */,
+				37BDBD4F2CC7C4B3002B02D9 /* Onboarding */,
+				2C85DECD2CCA536E00F38CE7 /* Cell */,
+				2C0BCFD22CC903EA008BEFAF /* ViewController */,
+				2C0BCFDB2CC91CE6008BEFAF /* Extension */,
+				9AF2C4162CC67B2B00E480B0 /* Assets.xcassets */,
+				2CB8DF632CCBAC1D0015BE05 /* sample.mp4 */,
+				9AF2C4182CC67B2B00E480B0 /* LaunchScreen.storyboard */,
+				37BDBD662CC7C5A0002B02D9 /* ImagesViewController.swift */,
+				37BDBD682CC7C5A0002B02D9 /* Main.storyboard */,
+				37BDBD692CC7C5A0002B02D9 /* MainViewController.swift */,
+				37BDBD6B2CC7C5A0002B02D9 /* TextViewController.swift */,
+				37BDBD6C2CC7C5A0002B02D9 /* ViewController.swift */,
+				9AF2C41B2CC67B2B00E480B0 /* Info.plist */,
+				9AF2C4132CC67B2900E480B0 /* Motorducky.xcdatamodeld */,
+			);
+			path = Motorducky;
+			sourceTree = "<group>";
+		};
+		9AF2C4232CC67B2B00E480B0 /* MotorduckyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2C4242CC67B2B00E480B0 /* MotorduckyTests.swift */,
+			);
+			path = MotorduckyTests;
+			sourceTree = "<group>";
+		};
+		9AF2C42D2CC67B2B00E480B0 /* MotorduckyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2C42E2CC67B2B00E480B0 /* MotorduckyUITests.swift */,
+				9AF2C4302CC67B2B00E480B0 /* MotorduckyUITestsLaunchTests.swift */,
+			);
+			path = MotorduckyUITests;
+			sourceTree = "<group>";
+		};
+		9AF2C43D2CC67C6B00E480B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2C43E2CC67C9100E480B0 /* IdOblutes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9AF2C4402CC681C100E480B0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2C4412CC681F600E480B0 /* LoginViewController.swift */,
+				9AF2C4432CC6820700E480B0 /* SignUpViewController.swift */,
+				9AF2C4452CC6821500E480B0 /* OTPViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AF2C4062CC67B2900E480B0 /* Motorducky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF2C4342CC67B2B00E480B0 /* Build configuration list for PBXNativeTarget "Motorducky" */;
+			buildPhases = (
+				88F3CD1EFB1B3D2B54E1BBAC /* [CP] Check Pods Manifest.lock */,
+				9AF2C4032CC67B2900E480B0 /* Sources */,
+				9AF2C4042CC67B2900E480B0 /* Frameworks */,
+				9AF2C4052CC67B2900E480B0 /* Resources */,
+				238F74B27EFB236F798D53E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Motorducky;
+			productName = Motorducky;
+			productReference = 9AF2C4072CC67B2900E480B0 /* Motorducky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AF2C41F2CC67B2B00E480B0 /* MotorduckyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF2C4372CC67B2B00E480B0 /* Build configuration list for PBXNativeTarget "MotorduckyTests" */;
+			buildPhases = (
+				BC1A59BA3907D558ADA0B033 /* [CP] Check Pods Manifest.lock */,
+				9AF2C41C2CC67B2B00E480B0 /* Sources */,
+				9AF2C41D2CC67B2B00E480B0 /* Frameworks */,
+				9AF2C41E2CC67B2B00E480B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AF2C4222CC67B2B00E480B0 /* PBXTargetDependency */,
+			);
+			name = MotorduckyTests;
+			productName = MotorduckyTests;
+			productReference = 9AF2C4202CC67B2B00E480B0 /* MotorduckyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AF2C4292CC67B2B00E480B0 /* MotorduckyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF2C43A2CC67B2B00E480B0 /* Build configuration list for PBXNativeTarget "MotorduckyUITests" */;
+			buildPhases = (
+				0B61C7544E01905D7F66D339 /* [CP] Check Pods Manifest.lock */,
+				9AF2C4262CC67B2B00E480B0 /* Sources */,
+				9AF2C4272CC67B2B00E480B0 /* Frameworks */,
+				9AF2C4282CC67B2B00E480B0 /* Resources */,
+				6922E9D5F6A72CAB008DB388 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AF2C42C2CC67B2B00E480B0 /* PBXTargetDependency */,
+			);
+			name = MotorduckyUITests;
+			productName = MotorduckyUITests;
+			productReference = 9AF2C42A2CC67B2B00E480B0 /* MotorduckyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AF2C3FF2CC67B2900E480B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9AF2C4062CC67B2900E480B0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					9AF2C41F2CC67B2B00E480B0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9AF2C4062CC67B2900E480B0;
+					};
+					9AF2C4292CC67B2B00E480B0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9AF2C4062CC67B2900E480B0;
+					};
+				};
+			};
+			buildConfigurationList = 9AF2C4022CC67B2900E480B0 /* Build configuration list for PBXProject "Motorducky" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AF2C3FE2CC67B2900E480B0;
+			productRefGroup = 9AF2C4082CC67B2900E480B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AF2C4062CC67B2900E480B0 /* Motorducky */,
+				9AF2C41F2CC67B2B00E480B0 /* MotorduckyTests */,
+				9AF2C4292CC67B2B00E480B0 /* MotorduckyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AF2C4052CC67B2900E480B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF2C41A2CC67B2B00E480B0 /* LaunchScreen.storyboard in Resources */,
+				37BDBD722CC7C5A0002B02D9 /* Main.storyboard in Resources */,
+				9A9242A82CC6916F00FDC908 /* GoogleService-Info.plist in Resources */,
+				9AF2C4172CC67B2B00E480B0 /* Assets.xcassets in Resources */,
+				2C85DED22CCA539600F38CE7 /* HistoryCell.xib in Resources */,
+				9AF2C4122CC67B2900E480B0 /* Onboarding.storyboard in Resources */,
+				2CB8DF642CCBAC1D0015BE05 /* sample.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF2C41E2CC67B2B00E480B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF2C4282CC67B2B00E480B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B61C7544E01905D7F66D339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motorducky-MotorduckyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		238F74B27EFB236F798D53E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motorducky/Pods-Motorducky-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motorducky/Pods-Motorducky-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motorducky/Pods-Motorducky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6922E9D5F6A72CAB008DB388 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motorducky-MotorduckyUITests/Pods-Motorducky-MotorduckyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motorducky-MotorduckyUITests/Pods-Motorducky-MotorduckyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motorducky-MotorduckyUITests/Pods-Motorducky-MotorduckyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F3CD1EFB1B3D2B54E1BBAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motorducky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC1A59BA3907D558ADA0B033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotorduckyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AF2C4032CC67B2900E480B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADBBE52CC92DA9002F4352 /* SettingsVC.swift in Sources */,
+				9AF2C4422CC681F600E480B0 /* LoginViewController.swift in Sources */,
+				2C0BCFD62CC9042B008BEFAF /* WebVC.swift in Sources */,
+				9AF2C4442CC6820700E480B0 /* SignUpViewController.swift in Sources */,
+				2C7C8E4A2CC9269D008975D2 /* ApplicationRoot.swift in Sources */,
+				9AF2C4152CC67B2900E480B0 /* Motorducky.xcdatamodeld in Sources */,
+				2C85DECA2CCA168C00F38CE7 /* UIViewExtensions.swift in Sources */,
+				2C85DECC2CCA528100F38CE7 /* HistoryVC.swift in Sources */,
+				2C85DED52CCA606200F38CE7 /* VideoPlayerVC.swift in Sources */,
+				9AF2C43F2CC67C9100E480B0 /* IdOblutes.swift in Sources */,
+				9AF2C4462CC6821500E480B0 /* OTPViewController.swift in Sources */,
+				2C85DED32CCA539600F38CE7 /* HistoryCell.swift in Sources */,
+				9A912EF02CC6AD21009AA6F5 /* HomeViewController.swift in Sources */,
+				2C0BCFDA2CC91BA5008BEFAF /* SelectLogVC.swift in Sources */,
+				2C0BCFD82CC91146008BEFAF /* BuildLogVC.swift in Sources */,
+				2C7C8E482CC92617008975D2 /* AppNavigationController.swift in Sources */,
+				2C85DEC82CCA163200F38CE7 /* UIView+Extensions.swift in Sources */,
+				9AF2C40F2CC67B2900E480B0 /* SplashVC.swift in Sources */,
+				9AF2C40B2CC67B2900E480B0 /* AppDelegate.swift in Sources */,
+				37BDBD6D2CC7C5A0002B02D9 /* ViewController.swift in Sources */,
+				37BDBD6E2CC7C5A0002B02D9 /* ImagesViewController.swift in Sources */,
+				37BDBD6F2CC7C5A0002B02D9 /* MainViewController.swift in Sources */,
+				37BDBD712CC7C5A0002B02D9 /* TextViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF2C41C2CC67B2B00E480B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF2C4252CC67B2B00E480B0 /* MotorduckyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF2C4262CC67B2B00E480B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF2C42F2CC67B2B00E480B0 /* MotorduckyUITests.swift in Sources */,
+				9AF2C4312CC67B2B00E480B0 /* MotorduckyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AF2C4222CC67B2B00E480B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AF2C4062CC67B2900E480B0 /* Motorducky */;
+			targetProxy = 9AF2C4212CC67B2B00E480B0 /* PBXContainerItemProxy */;
+		};
+		9AF2C42C2CC67B2B00E480B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AF2C4062CC67B2900E480B0 /* Motorducky */;
+			targetProxy = 9AF2C42B2CC67B2B00E480B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37BDBD682CC7C5A0002B02D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37BDBD672CC7C5A0002B02D9 /* Main.storyboard */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AF2C4102CC67B2900E480B0 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AF2C4112CC67B2900E480B0 /* Base */,
+			);
+			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
+		9AF2C4182CC67B2B00E480B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AF2C4192CC67B2B00E480B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AF2C4322CC67B2B00E480B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AF2C4332CC67B2B00E480B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AF2C4352CC67B2B00E480B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47461BB70F4544B6CD708A54 /* Pods-Motorducky.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KP9UFNWYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motorducky/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.Motorducky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AF2C4362CC67B2B00E480B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF64FD6374EB542F00365DA3 /* Pods-Motorducky.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KP9UFNWYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motorducky/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.Motorducky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AF2C4382CC67B2B00E480B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B7A1AD51717CEEC463DF04 /* Pods-MotorduckyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.MotorduckyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motorducky.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Motorducky";
+			};
+			name = Debug;
+		};
+		9AF2C4392CC67B2B00E480B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 683909480BC3DE3F025D6AFF /* Pods-MotorduckyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.MotorduckyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motorducky.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Motorducky";
+			};
+			name = Release;
+		};
+		9AF2C43B2CC67B2B00E480B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC49F7CA31F43BCEF52CE77A /* Pods-Motorducky-MotorduckyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.MotorduckyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motorducky;
+			};
+			name = Debug;
+		};
+		9AF2C43C2CC67B2B00E480B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0AC0C6D895760BF5888871 /* Pods-Motorducky-MotorduckyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.MotorduckyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Motorducky;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AF2C4022CC67B2900E480B0 /* Build configuration list for PBXProject "Motorducky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF2C4322CC67B2B00E480B0 /* Debug */,
+				9AF2C4332CC67B2B00E480B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF2C4342CC67B2B00E480B0 /* Build configuration list for PBXNativeTarget "Motorducky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF2C4352CC67B2B00E480B0 /* Debug */,
+				9AF2C4362CC67B2B00E480B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF2C4372CC67B2B00E480B0 /* Build configuration list for PBXNativeTarget "MotorduckyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF2C4382CC67B2B00E480B0 /* Debug */,
+				9AF2C4392CC67B2B00E480B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF2C43A2CC67B2B00E480B0 /* Build configuration list for PBXNativeTarget "MotorduckyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF2C43B2CC67B2B00E480B0 /* Debug */,
+				9AF2C43C2CC67B2B00E480B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9AF2C4132CC67B2900E480B0 /* Motorducky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9AF2C4142CC67B2900E480B0 /* Motorducky.xcdatamodel */,
+			);
+			currentVersion = 9AF2C4142CC67B2900E480B0 /* Motorducky.xcdatamodel */;
+			path = Motorducky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9AF2C3FF2CC67B2900E480B0 /* Project object */;
+}
